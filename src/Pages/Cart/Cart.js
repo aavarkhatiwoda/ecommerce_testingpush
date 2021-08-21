@@ -1,11 +1,99 @@
 import './Cart.scss';
 import {esi} from '../Eshopitems/Eshopitems.js';
-import Pencil_img from '../../Components/Images/pencil_img.jpg';
-import Eraser_img from '../../Components/Images/eraser_img.jpg';
-import Notebook_img from '../../Components/Images/notebook_img.jpeg';
-import Backpack_img from '../../Components/Images/backpack_img.jpg';
-import Pencilpouch_img from '../../Components/Images/pencilpouch_img.jpg';
-import Calculator_img from '../../Components/Images/calculator_img.jpeg';
+import SectionHeading from '../../Components/SectionHeading/SectionHeading.js';
+
+/*
+function ShowCartItems() {
+  for (var i = 0; i < esi.length; i++) {
+    if (esi[i].quantity > 0) {
+      return (
+        <div>
+          <img src={esi[i].image} className="incart_img" />
+          <div className="incart_itemname">{esi[i].name}</div>
+          <div className="incart_itemquantity">{"x" + esi[i].quantity}</div>
+        </div>
+      );
+    }
+  }
+}
+*/
+
+
+
+function Cart() {
+  return (
+    <div className="cart" id="cart">
+      <SectionHeading word1="Cart" />
+
+        <div className="cart_cartitemscontainer">
+
+          <div className="i1" id="i1">
+            <div className="smallfont">
+              <img src="" className="incart_itemimg" id="ii1" />
+              <div className="incart_itemname" id="in1" />
+              <div className="incart_itemquantity" id="iq1" />
+            </div>
+          </div>
+          <div className="i2" id="i2">
+            <div className="smallfont">
+              <img src="" className="incart_itemimg" id="ii2" />
+              <div className="incart_itemname" id="in2" />
+              <div className="incart_itemquantity" id="iq2" />
+            </div>
+          </div>
+          <div className="i3" id="i3">
+            <div className="smallfont">
+              <img src="" className="incart_itemimg" id="ii3" />
+              <div className="incart_itemname" id="in3" />
+              <div className="incart_itemquantity" id="iq3" />
+            </div>
+          </div>
+          <div className="i4" id="i4">
+            <div className="smallfont">
+              <img src="" className="incart_itemimg" id="ii4" />
+              <div className="incart_itemname" id="in4" />
+              <div className="incart_itemquantity" id="iq4" />
+            </div>
+          </div>
+          <div className="i5" id="i5">
+            <div className="smallfont">
+              <img src="" className="incart_itemimg" id="ii5" />
+              <div className="incart_itemname" id="in5" />
+              <div className="incart_itemquantity" id="iq5" />
+            </div>
+          </div>
+          <div className="i6" id="i6">
+            <div className="smallfont">
+              <img src="" className="incart_itemimg" id="ii6" />
+              <div className="incart_itemname" id="in6" />
+              <div className="incart_itemquantity" id="iq6" />
+            </div>
+          </div>
+
+        </div>
+
+
+
+    </div>
+  )
+}
+
+export default Cart;
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import './Cart.scss';
+import {esi} from '../Eshopitems/Eshopitems.js';
 import SectionHeading from '../../Components/SectionHeading/SectionHeading.js';
 
 
@@ -49,3 +137,4 @@ function Cart() {
 }
 
 export default Cart;
+*/

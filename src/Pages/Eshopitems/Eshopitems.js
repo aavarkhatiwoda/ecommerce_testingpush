@@ -1,13 +1,7 @@
 import './Eshopitems.scss';
-import Pencil_img from '../../Components/Images/pencil_img.jpg';
-import Eraser_img from '../../Components/Images/eraser_img.jpg';
-import Notebook_img from '../../Components/Images/notebook_img.jpeg';
-import Backpack_img from '../../Components/Images/backpack_img.jpg';
-import Pencilpouch_img from '../../Components/Images/pencilpouch_img.jpg';
-import Calculator_img from '../../Components/Images/calculator_img.jpeg';
-import Item_img from '../../Components/Images/item_img.jpg';
-import Placeholder_img from '../../Components/Images/placeholder_img.jpg';
+import Placeholder_img from '../../Components/Images/placeholder_img2.jpg';
 import SectionHeading from '../../Components/SectionHeading/SectionHeading.js';
+import C from '../Cart/Cart.js';
 
 var addtocart = "Add to cart";
 export const esi = [
@@ -23,7 +17,7 @@ export const esi = [
     itemnumber:2,
     quantity:0,
     image:Placeholder_img,
-    name:"Elastic Shorts",
+    name:"Summer Shorts",
     price:15.00,
     addtocartbutton:addtocart,
   },
@@ -77,8 +71,10 @@ function Eshopitems() {
                 <div className="smallfont">
                   <span className="eshopitems_cards_contents_addtocartbutton" onClick={function() {
                     esi[i.itemnumber-1].quantity+=1;
-                    {/*alert(i.name + " successfully added to the cart");*/}
-                    
+                    document.getElementById('i' + i.itemnumber).style.display = "block";
+                    document.getElementById('ii' + i.itemnumber).src = i.image;
+                    document.getElementById('in' + i.itemnumber).innerHTML = i.name;
+                    document.getElementById('iq' + i.itemnumber).innerHTML = "$" + i.price +  " x" + i.quantity;
                   }}>
                     {i.addtocartbutton}
                   </span>
