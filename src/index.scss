@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import './Components/Styles/Text';
+@import './Components/Styles/Colors';
+
+body {
+  margin: 0;
+  /*
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  */
+  font-family: "Montserrat", "Times New Roman";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+
+.smallfont,
+.smallfont-bigger,
+.mediumfont-smaller,
+.mediumfont,
+.largefont {
+  color: $textcolormain;
+}
+
+
+@media screen and (min-width: 2801px) {
+  .largefont {
+    font-size: $desktop5-largefont;
+  }
+  .mediumfont {
+    font-size: $desktop5-mediumfont;
+  }
+  .mediumfont-smaller {
+    font-size: $desktop5-mediumfont-smaller;
+  }
+  .smallfont-bigger {
+    font-size: $desktop5-smallfont-bigger;
+  }
+  .smallfont {
+    font-size: $desktop5-smallfont;
+  }
+}
+@media screen and (max-width: 2800px) {
+  .largefont {
+    font-size: $desktop4-largefont;
+  }
+  .mediumfont {
+    font-size: $desktop4-mediumfont;
+  }
+  .mediumfont-smaller {
+    font-size: $desktop4-mediumfont-smaller;
+  }
+  .smallfont-bigger {
+    font-size: $desktop4-smallfont-bigger;
+  }
+  .smallfont {
+    font-size: $desktop4-smallfont;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .largefont {
+    font-size: $desktop3-largefont;
+  }
+  .mediumfont {
+    font-size: $desktop3-mediumfont;
+  }
+  .mediumfont-smaller {
+    font-size: $desktop3-mediumfont-smaller;
+  }
+  .smallfont-bigger {
+    font-size: $desktop3-smallfont-bigger;
+  }
+  .smallfont {
+    font-size: $desktop3-smallfont;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .largefont {
+    font-size: $desktop2-largefont;
+  }
+  .mediumfont {
+    font-size: $desktop2-mediumfont;
+  }
+  .mediumfont-smaller {
+    font-size: $desktop2-mediumfont-smaller;
+  }
+  .smallfont-bigger {
+    font-size: $desktop2-smallfont-bigger;
+  }
+  .smallfont {
+    font-size: $desktop2-smallfont;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .largefont {
+    font-size: $desktop-largefont;
+  }
+  .mediumfont {
+    font-size: $desktop-mediumfont;
+  }
+  .mediumfont-smaller {
+    font-size: $desktop-mediumfont-smaller;
+  }
+  .smallfont-bigger {
+    font-size: $desktop-smallfont-bigger;
+  }
+  .smallfont {
+    font-size: $desktop-smallfont;
+  }
+}
+@media screen and (max-width: 768px) {
+  .largefont {
+    font-size: $mobile2-largefont;
+  }
+  .mediumfont {
+    font-size: $mobile2-mediumfont;
+  }
+  .mediumfont-smaller {
+    font-size: $mobile2-mediumfont-smaller;
+  }
+  .smallfont-bigger {
+    font-size: $mobile2-smallfont-bigger;
+  }
+  .smallfont {
+    font-size: $mobile2-smallfont;
+  }
+}
+@media screen and (max-width: 400px) {
+  .largefont {
+    font-size: $mobile-largefont;
+  }
+  .mediumfont {
+    font-size: $mobile-mediumfont;
+  }
+  .mediumfont-smaller {
+    font-size: $mobile-mediumfont-smaller;
+  }
+  .smallfont-bigger {
+    font-size: $mobile-smallfont-bigger;
+  }
+  .smallfont {
+    font-size: $mobile-smallfont;
+  }
+}
+
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
