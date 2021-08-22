@@ -53,11 +53,21 @@
 .i4,
 .i5,
 .i6 {
+  background: white;
   margin: 5vh 5vw 0 5vw;
   display: none;
 }
-
-
+.incart_removeall,
+.incart_add1,
+.incart_subtract1 {
+  display: inline-block;
+  color: #646464;
+  &:hover {
+    transition: 200ms;
+    color: #c86400;
+    cursor: pointer;
+  }
+}
 
 
 

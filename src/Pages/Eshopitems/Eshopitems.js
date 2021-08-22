@@ -1,5 +1,5 @@
 import './Eshopitems.scss';
-import Placeholder_img from '../../Components/Images/placeholder_img2.jpg';
+import Placeholder_img from '../../Components/Images/placeholder_img.jpg';
 import SectionHeading from '../../Components/SectionHeading/SectionHeading.js';
 import C from '../Cart/Cart.js';
 
@@ -54,6 +54,7 @@ export const esi = [
     addtocartbutton:addtocart,
   },
 ];
+
 
 function Eshopitems() {
   return (
