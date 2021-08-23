@@ -8,9 +8,7 @@ function Footer() {
 
       <br/><br/>
       <div className="footer-name">
-        <span className="mediumfont-smaller">
-          Apparel Badger
-        </span>
+        <div className="fontsize3" style={{color:"#c86400"}}>Apparel Badger</div>
       </div>
       <span className="smallfont"><br/>
         Apparel Badger © 2021<br/><br/>

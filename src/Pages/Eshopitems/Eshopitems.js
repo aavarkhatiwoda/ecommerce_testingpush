@@ -1,15 +1,115 @@
 import './Eshopitems.scss';
 import Placeholder_img from '../../Components/Images/placeholder_img.jpg';
 import SectionHeading from '../../Components/SectionHeading/SectionHeading.js';
-import C from '../Cart/Cart.js';
 
-var addtocart = "Add to cart";
+var addtocart = "ADD TO CART";
 export const esi = [
   {
     itemnumber:1,
     quantity:0,
     image:Placeholder_img,
-    name:"Hawai'ian Shirt",
+    name:"HAWAI'IAN SHIRT",
+    price:30.00,
+    addtocartbutton:addtocart,
+  },
+  {
+    itemnumber:2,
+    quantity:0,
+    image:Placeholder_img,
+    name:"SUMMER SHORTS",
+    price:25.00,
+    addtocartbutton:addtocart,
+  },
+  {
+    itemnumber:6,
+    quantity:0,
+    image:Placeholder_img,
+    name:"SWIMMING TRUNKS",
+    price:25.00,
+    addtocartbutton:addtocart,
+  },
+  {
+    itemnumber:3,
+    quantity:0,
+    image:Placeholder_img,
+    name:"POLARIZED BLACK SUNGLASSES",
+    price:50.00,
+    addtocartbutton:addtocart,
+  },
+  {
+    itemnumber:4,
+    quantity:0,
+    image:Placeholder_img,
+    name:"POLARIZED BROWN SUNGLASSES",
+    price:50.00,
+    addtocartbutton:addtocart,
+  },
+  {
+    itemnumber:5,
+    quantity:0,
+    image:Placeholder_img,
+    name:"SANDALS",
+    price:15.00,
+    addtocartbutton:addtocart,
+  },
+];
+
+
+function Eshopitems() {
+  return (
+    <div className="eshopitems_parent" id="shop">
+      <div className="eshopitems">
+
+        <SectionHeading text="ITEM LIBRARY" />
+        <div className="eshopitems_cards_container">
+          {esi.map(i => (
+            <div className="eshopitems_cards">
+              <div className="eshopitems_cards_contents">
+                <span>
+                  <img src={i.image} className="eshopitems_cards_contents_image" />
+                  <div className="eshopitems_cards_contents_name"><span className="fontsize1">{i.name}</span></div>
+                  <div className="eshopitems_cards_contents_price"><span className="fontsize1" style={{color:'#646464'}}>{"$" + i.price}</span></div>
+                  <div className="eshopitems_cards_contents_addtocartbutton" onClick={function() {
+                    esi[i.itemnumber-1].quantity+=1;
+                    document.getElementById('i' + i.itemnumber).style.display = "block";
+                    document.getElementById('ii' + i.itemnumber).src = i.image;
+                    document.getElementById('in' + i.itemnumber).innerHTML = i.name;
+                    document.getElementById('iq' + i.itemnumber).innerHTML = "$" + i.price +  " x" + i.quantity;
+                  }}>
+                    <div className="fontsize1">{i.addtocartbutton}</div></div>
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
+
+      </div>
+    </div>
+  )
+}
+
+
+export default Eshopitems;
+
+
+
+
+
+
+
+
+
+
+/*
+var addtocart = "ADD TO CART";
+export const esi = [
+  {
+    itemnumber:1,
+    quantity:0,
+    image:Placeholder_img,
+    name:"HAWAI'IAN SHIRT",
     price:20.00,
     addtocartbutton:addtocart,
   },
@@ -17,7 +117,7 @@ export const esi = [
     itemnumber:2,
     quantity:0,
     image:Placeholder_img,
-    name:"Summer Shorts",
+    name:"SUMMER SHORTS",
     price:15.00,
     addtocartbutton:addtocart,
   },
@@ -25,7 +125,7 @@ export const esi = [
     itemnumber:3,
     quantity:0,
     image:Placeholder_img,
-    name:"Polarized Black Sunglasses",
+    name:"POLARIZED BLACK SUNGLASSES",
     price:40.00,
     addtocartbutton:addtocart,
   },
@@ -33,7 +133,7 @@ export const esi = [
     itemnumber:4,
     quantity:0,
     image:Placeholder_img,
-    name:"Polarized Brown Sunglasses",
+    name:"POLARIZED BROWN SUNGLASSES",
     price:40.00,
     addtocartbutton:addtocart,
   },
@@ -41,7 +141,7 @@ export const esi = [
     itemnumber:5,
     quantity:0,
     image:Placeholder_img,
-    name:"Sandals",
+    name:"SANDALS",
     price:10.00,
     addtocartbutton:addtocart,
   },
@@ -49,7 +149,7 @@ export const esi = [
     itemnumber:6,
     quantity:0,
     image:Placeholder_img,
-    name:"Cap",
+    name:"CAP",
     price:10.00,
     addtocartbutton:addtocart,
   },
@@ -59,13 +159,12 @@ export const esi = [
 function Eshopitems() {
   return (
     <div className="eshopitems" id="shop">
-      <SectionHeading word1="Item" word2="Library" />
+      <SectionHeading text="Item Library" />
       <div className="eshopitems_cards_container">
         {esi.map(i => (
           <div className="eshopitems_cards">
             <div className="eshopitems_cards_contents">
               <span>
-                <div className="eshopitems_cards_contents_padding" />
                 <img src={i.image} className="eshopitems_cards_contents_image" />
                 <div className="eshopitems_cards_contents_name"><span className="smallfont">{i.name}</span></div>
                 <div className="eshopitems_cards_contents_price"><span className="smallfont" style={{color:'#646464'}}>{"$" + i.price}</span></div>
@@ -80,7 +179,6 @@ function Eshopitems() {
                     {i.addtocartbutton}
                   </span>
                 </div>
-                <div className="eshopitems_cards_contents_padding" />
               </span>
             </div>
           </div>
@@ -89,9 +187,18 @@ function Eshopitems() {
     </div>
   )
 }
+*/
 
 
-export default Eshopitems;
+
+
+
+
+
+
+
+
+
 
 
 

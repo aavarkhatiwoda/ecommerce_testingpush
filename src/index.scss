@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
 @import './Components/Styles/Text';
 @import './Components/Styles/Colors';
 
@@ -19,7 +20,6 @@ code {
     monospace;
 }
 
-
 ul {
   list-style: none;
   padding: 0;
@@ -36,7 +36,7 @@ a {
   margin: 0;
 }
 
-
+/*
 .smallfont,
 .smallfont-bigger,
 .mediumfont-smaller,
@@ -44,127 +44,117 @@ a {
 .largefont {
   color: $textcolormain;
 }
-
-
-@media screen and (min-width: 2801px) {
-  .largefont {
-    font-size: $desktop5-largefont;
+*/
+@media screen and (min-width: 2561px) {
+  .fontsize5 {
+    font-size: $desktop4-fontsize5;
   }
-  .mediumfont {
-    font-size: $desktop5-mediumfont;
+  .fontsize4 {
+    font-size: $desktop4-fontsize4;
   }
-  .mediumfont-smaller {
-    font-size: $desktop5-mediumfont-smaller;
+  .fontsize3 {
+    font-size: $desktop4-fontsize3;
   }
-  .smallfont-bigger {
-    font-size: $desktop5-smallfont-bigger;
+  .fontsize2 {
+    font-size: $desktop4-fontsize2;
   }
-  .smallfont {
-    font-size: $desktop5-smallfont;
+  .fontsize1 {
+    font-size: $desktop4-fontsize1;
   }
 }
-@media screen and (max-width: 2800px) {
-  .largefont {
-    font-size: $desktop4-largefont;
+@media screen and (max-width: 2560px) {
+  .fontsize5 {
+    font-size: $desktop3-fontsize5;
   }
-  .mediumfont {
-    font-size: $desktop4-mediumfont;
+  .fontsize4 {
+    font-size: $desktop3-fontsize4;
   }
-  .mediumfont-smaller {
-    font-size: $desktop4-mediumfont-smaller;
+  .fontsize3 {
+    font-size: $desktop3-fontsize3;
   }
-  .smallfont-bigger {
-    font-size: $desktop4-smallfont-bigger;
+  .fontsize2 {
+    font-size: $desktop3-fontsize2;
   }
-  .smallfont {
-    font-size: $desktop4-smallfont;
+  .fontsize1 {
+    font-size: $desktop3-fontsize1;
   }
 }
 @media screen and (max-width: 1920px) {
-  .largefont {
-    font-size: $desktop3-largefont;
+  .fontsize5 {
+    font-size: $desktop2-fontsize5;
   }
-  .mediumfont {
-    font-size: $desktop3-mediumfont;
+  .fontsize4 {
+    font-size: $desktop2-fontsize4;
   }
-  .mediumfont-smaller {
-    font-size: $desktop3-mediumfont-smaller;
+  .fontsize3 {
+    font-size: $desktop2-fontsize3;
   }
-  .smallfont-bigger {
-    font-size: $desktop3-smallfont-bigger;
+  .fontsize2 {
+    font-size: $desktop2-fontsize2;
   }
-  .smallfont {
-    font-size: $desktop3-smallfont;
-  }
-}
-@media screen and (max-width: 1680px) {
-  .largefont {
-    font-size: $desktop2-largefont;
-  }
-  .mediumfont {
-    font-size: $desktop2-mediumfont;
-  }
-  .mediumfont-smaller {
-    font-size: $desktop2-mediumfont-smaller;
-  }
-  .smallfont-bigger {
-    font-size: $desktop2-smallfont-bigger;
-  }
-  .smallfont {
-    font-size: $desktop2-smallfont;
+  .fontsize1 {
+    font-size: $desktop2-fontsize1;
   }
 }
-@media screen and (max-width: 1300px) {
-  .largefont {
-    font-size: $desktop-largefont;
+@media screen and (max-width: 1366px) {
+  .fontsize5 {
+    font-size: $desktop-fontsize5;
   }
-  .mediumfont {
-    font-size: $desktop-mediumfont;
+  .fontsize4 {
+    font-size: $desktop-fontsize4;
   }
-  .mediumfont-smaller {
-    font-size: $desktop-mediumfont-smaller;
+  .fontsize3 {
+    font-size: $desktop-fontsize3;
   }
-  .smallfont-bigger {
-    font-size: $desktop-smallfont-bigger;
+  .fontsize2 {
+    font-size: $desktop-fontsize2;
   }
-  .smallfont {
-    font-size: $desktop-smallfont;
+  .fontsize1 {
+    font-size: $desktop-fontsize1;
   }
 }
 @media screen and (max-width: 768px) {
-  .largefont {
-    font-size: $mobile2-largefont;
+  .fontsize5 {
+    font-size: $mobile2-fontsize5;
   }
-  .mediumfont {
-    font-size: $mobile2-mediumfont;
+  .fontsize4 {
+    font-size: $mobile2-fontsize4;
   }
-  .mediumfont-smaller {
-    font-size: $mobile2-mediumfont-smaller;
+  .fontsize3 {
+    font-size: $mobile2-fontsize3;
   }
-  .smallfont-bigger {
-    font-size: $mobile2-smallfont-bigger;
+  .fontsize2 {
+    font-size: $mobile2-fontsize2;
   }
-  .smallfont {
-    font-size: $mobile2-smallfont;
+  .fontsize1 {
+    font-size: $mobile-fontsize1;
   }
 }
 @media screen and (max-width: 400px) {
-  .largefont {
-    font-size: $mobile-largefont;
+  .fontsize5 {
+    font-size: $mobile-fontsize5;
   }
-  .mediumfont {
-    font-size: $mobile-mediumfont;
+  .fontsize4 {
+    font-size: $mobile-fontsize4;
   }
-  .mediumfont-smaller {
-    font-size: $mobile-mediumfont-smaller;
+  .fontsize3 {
+    font-size: $mobile-fontsize3;
   }
-  .smallfont-bigger {
-    font-size: $mobile-smallfont-bigger;
+  .fontsize2 {
+    font-size: $mobile-fontsize2;
   }
-  .smallfont {
-    font-size: $mobile-smallfont;
+  .fontsize1 {
+    font-size: $mobile-fontsize1;
   }
 }
+
+
+
+
+
+
+
+
 
 /*
 body {

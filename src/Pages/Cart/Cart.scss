@@ -1,3 +1,46 @@
+@import '../../Components/Styles/Colors';
+
+/*
+Cart ___________________________________________________________________________
+*/
+.cart_parent {
+  background: $backgroundcolor3;
+  height: 100vh;
+}
+.cart {
+  display: inline-block;
+  @media screen and (min-width: 2561px) {
+    margin: 240px 0 240px 0;
+  }
+  @media screen and (max-width: 2560px) {
+    margin: 180px 0 180px 0;
+  }
+  @media screen and (max-width: 1920px) {
+    margin: 120px 0 120px 0;
+  }
+  @media screen and (max-width: 1366px) {
+    margin: 100px 0 100px 0;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 100px 0 100px 0;
+  }
+}
+
+
+
+
+
+
+/*
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
+*/
+
+
+/*
 .cart {
   background: rgb(240,240,240);
   @media screen and (min-width: 2801px) {
@@ -68,12 +111,18 @@
     cursor: pointer;
   }
 }
+*/
 
 
 
 
-
-
+/*
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+*/
 
 /*
 .cart {

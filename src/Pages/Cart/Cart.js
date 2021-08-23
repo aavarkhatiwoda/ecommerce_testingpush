@@ -2,23 +2,50 @@ import './Cart.scss';
 import {esi} from '../Eshopitems/Eshopitems.js';
 import SectionHeading from '../../Components/SectionHeading/SectionHeading.js';
 
-/*
-function ShowCartItems() {
-  for (var i = 0; i < esi.length; i++) {
-    if (esi[i].quantity > 0) {
-      return (
-        <div>
-          <img src={esi[i].image} className="incart_img" />
-          <div className="incart_itemname">{esi[i].name}</div>
-          <div className="incart_itemquantity">{"x" + esi[i].quantity}</div>
-        </div>
-      );
-    }
-  }
+function Cart() {
+  return (
+    <div className="cart_parent" id="cart">
+      <div className="cart">
+        <SectionHeading text="CART" />
+
+        
+
+
+
+      </div>
+    </div>
+  )
 }
+
+export default Cart;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
+2ND OLDEST BELOW _______________________________________________________________
 */
 
 
+/*
+import './Cart.scss';
+import {esi} from '../Eshopitems/Eshopitems.js';
+import SectionHeading from '../../Components/SectionHeading/SectionHeading.js';
 
 function Cart() {
   return (
@@ -166,17 +193,35 @@ function Cart() {
 }
 
 export default Cart;
+*/
+
+
+/*
+function ShowCartItems() {
+  for (var i = 0; i < esi.length; i++) {
+    if (esi[i].quantity > 0) {
+      return (
+        <div>
+          <img src={esi[i].image} className="incart_img" />
+          <div className="incart_itemname">{esi[i].name}</div>
+          <div className="incart_itemquantity">{"x" + esi[i].quantity}</div>
+        </div>
+      );
+    }
+  }
+}
+*/
 
 
 
 
-
-
-
-
-
-
-
+/*
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+OLDEST BELOW ___________________________________________________________________
+*/
 
 /*
 import './Cart.scss';

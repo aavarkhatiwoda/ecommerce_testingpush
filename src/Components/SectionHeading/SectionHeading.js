@@ -9,11 +9,8 @@ function SectionHeading(props) {
   return (
     <div className="sectionheading">
       <div className="sectionheading-c">
-        <div className="mediumfont" style={{color:props.color}}>
-          {props.word1}
-        </div>
-        <div className="mediumfont" style={{color:props.color}}>
-          {props.word2}
+        <div className="fontsize2" style={{color:props.color}}>
+          <b>{props.text}</b>
         </div>
       </div>
     </div>
