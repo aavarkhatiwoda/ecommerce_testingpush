@@ -37,7 +37,7 @@ function ShowMobileMenu() {
   return (
     <div className="landing-mobile-menu-parent">
       {menulist.map(item => (
-        <span className="fontsize3">
+        <span className="fontsize2">
           <a className="landing-mobile-menu-links" href={item.id}>{item.name}</a></span>
       ))}
     </div>
@@ -64,7 +64,7 @@ function Home() {
 
       <div className="home">
         <div className="home_content">
-          <div className="fontsize5" style={{color:"#c86400"}}>Apparel Badger</div>
+          <div className="fontsize5" style={{color:"#c86400"}}>SEA&OTTER</div>
           <div className="fontsize1" style={{color:"#646464"}}>ecommerce fashion specialists</div>
         </div>
       </div>
