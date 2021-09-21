@@ -10,8 +10,7 @@ function Footer() {
       <div className="footer-name">
         <div className="fontsize3" style={{color:"#c86400"}}>SEA&OTTER</div>
       </div>
-      <span className="smallfont"><br/>
-        SEA&OTTER © 2021<br/><br/>
+      <span className="fontsize1"><br/>
         Est. 2021 | Fairfax, VA<br/><br/>
         Thank you, please come again!<br/><br/><br/>
       </span>
